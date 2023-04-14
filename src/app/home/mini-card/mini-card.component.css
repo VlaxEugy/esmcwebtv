@@ -1,9 +1,9 @@
-#cpn-card{
+#cpn-card {
   display: grid;
   grid-template-columns: 40% 60%;
+  gap: 0.3rem;
 
   padding: 0.5rem;
-  gap: 0.3rem;
 }
 
 #cpn-card img {
@@ -12,8 +12,13 @@
   border-radius: 8px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
+
+#cpn-card> img, #cpn-card> h3 {
+  cursor: pointer;
+}
+
 @media (max-width: 30em) {
-  #cpn-card{
+  #cpn-card {
     grid-template-columns: 1fr;
     padding: 2rem;
   }

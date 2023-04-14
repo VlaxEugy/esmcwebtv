@@ -1,16 +1,17 @@
 <div class="ctn-tv">
 
   <div class="frame-header">
-    <iframe width="720" height="405"
-            src="https://www.youtube.com/embed/videoseries?list=PLsoi2D5rHj1yALMuMV3lZaCMUTEj2Wy4n"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+    <video class="video" src="https://esmc.streamtvweb.com:5443/WebRTCAppEE/play.html?name=X2XTonbwzSup1680804293538"></video>
+<!--    <iframe class="video" width="720" height="405"-->
+<!--            src="https://www.youtube.com/embed/videoseries?list=PLsoi2D5rHj1yALMuMV3lZaCMUTEj2Wy4n"-->
+<!--            title="YouTube video player" frameborder="0"-->
+<!--            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"-->
+<!--            allowfullscreen></iframe>-->
     <h1>Titre de la video</h1>
   </div>
 
   <div class="cards">
-     <app-mini-card *ngFor="let card of cards" [miniCards]="card" class="mcard"></app-mini-card>
+     <app-mini-card *ngFor="let card of cards" [miniCards]="card" class="mcard" [routerLink]="['/videos', card.title]"></app-mini-card>
   </div>
 
 </div>

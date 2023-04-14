@@ -12,19 +12,19 @@ export class HomeComponent implements OnInit{
     this.cards =[
       {
         image:'../assets/image/arch.jpg',
-        title:'Title',
+        title:'Arche de noe',
       },
       {
         image:'../assets/image/arch.jpg',
-        title:'Title',
+        title:'Le jardin d\'Eden',
       },
       {
         image:'../assets/image/arch.jpg',
-        title:'Title',
+        title:'Mashia Messie Mahdi',
       },
       {
         image:'../assets/image/arch.jpg',
-        title:'Title',
+        title:'Le Bâton de Moïse',
       },
       {
         image:'../assets/image/arch.jpg',
